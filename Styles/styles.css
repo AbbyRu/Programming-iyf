@@ -1,0 +1,12 @@
+
+main {
+    display:grid;
+    grid-template-areas: "topbar topbar  topbar"
+                         "aside   article aside"
+                         "footer footer  footer";
+}
+header  {grid-area: topbar; }
+aside   {grid-area: aside; }
+article {grid-area: article; }
+nav     {grid-area: topbar;}
+footer  {}
