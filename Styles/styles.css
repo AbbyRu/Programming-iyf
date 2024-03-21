@@ -1,12 +1,27 @@
 
 main {
     display:grid;
-    grid-template-areas: "topbar topbar  topbar"
-                         "aside   article aside"
-                         "footer footer  footer";
+    background-image: url(/Images/Red-billed1.jpg);
+    background-repeat: no-repeat;
+    grid-template-areas: inherit;
+    grid-template-columns: subgrid;
+    gap: 0 50px;
+    height: 100vh;
+    background-size: cover;
 }
-header  {grid-area: topbar; }
-aside   {grid-area: aside; }
-article {grid-area: article; }
-nav     {grid-area: topbar;}
-footer  {}
+.grid-container {
+    display: grid;
+    grid-template-areas: "header header header header header header"
+                         "nav main main main right right"
+                         "footer footer footer footer footer footer" ;
+    gap:10px;
+}
+.item1 {grid-area: header;}
+.item2 {grid-area: nav;}
+.item3 {grid-area: main;}
+.item4 {grid-area: right;}
+.item5 {grid-area: footer;}
+
+
+
+
