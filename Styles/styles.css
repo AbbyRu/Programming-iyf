@@ -1,15 +1,4 @@
 
-main {
-    display:grid;
-    background-image: url(/Images/Red-billed1.jpg);
-    background-repeat: no-repeat;
-    grid-template-areas: inherit;
-    grid-template-columns: subgrid;
-    gap: 0 50px;
-    height: 100vh;
-    background-size: cover;
-}
-
 .grid-container {
     display: grid;
     grid-template-areas: "header header header header header header"
@@ -28,7 +17,7 @@ main {
 body {
     background-color: rgb(188, 117, 31);
     background-repeat: no-repeat;
-    height: 100vh;
+    height: auto;
     background-size: cover;
     padding: 10px;
     margin: 5px;
@@ -36,13 +25,14 @@ body {
     margin-right: 0;
     border: hidden;
     padding-bottom: 10px;
+    width:auto;
 }
 
 .grid-container > div {
     padding: 20px ;
     text-align: center;
     background-color: aliceblue;
-  }
+}
 
 header {
     display: block;
@@ -50,15 +40,42 @@ header {
     margin: 10px;
     border: none;
     background-image: url(/Images/Red-billed1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
-.item2 {
-    
-}
-nav {
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: right;
+    width: 10%;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: right;
+    width: 10%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-}
 ul {
     list-style-type: none;
     display: block;
@@ -67,11 +84,13 @@ ul {
     padding: 8px;
     width: 60px;
     background-color: chocolate;
+    text-decoration: none;
 }
 
 li a {
     display: block;
-    
+    text-decoration: none;
+    font-weight: 20px;
   }
 
   li a:hover {
@@ -96,10 +115,24 @@ li a {
     row-gap: 20px;
     padding: 10px;
 }
+.flex-container1 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-direction: row;
+    row-gap: 20px;
+    padding: 10px;
+}
+.flex-container img {
+    margin: 10px; /* Add margin between images */
+    
+  }
 .item5 {
     display: block;
     border: none;
     background-image: url(/Images/Red-billed1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-weight: 20px;
     text-align: center;
     padding: 15px;
@@ -126,4 +159,21 @@ h3 {
 p {
     font-weight: 30px;
     text-align: center;
+}
+
+iframe {
+    border:"0";
+}
+@media only screen and (min-width: 200px) {
+    body {
+      background-color: lightblue;
+      background-image: radial-gradient(whitesmoke,lightblue);
+    }
+  }
+
+@media only screen and (max-width: 786px) {
+    body {
+      background-color: crimson;
+      background-image: radial-gradient(rgb(105, 15, 168),crimson);
+    }
 }
