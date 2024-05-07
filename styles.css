@@ -1,0 +1,172 @@
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "header header header header header header"
+                         "nav main main main right right"
+                         "footer footer footer footer footer footer" ;
+    gap: 5px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+.item1 {grid-area: header;}
+.item2 {grid-area: nav;}
+.item3 {grid-area: main;}
+.item4 {grid-area: right;}
+.item5 {grid-area: footer;}
+
+body {
+    background-color: rgb(188, 117, 31);
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: cover;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    border: hidden;
+    padding-bottom: 10px;
+    width:auto;
+}
+
+.grid-container > div {
+    padding: 20px ;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+header {
+    display: block;
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    background-image: url(/Images/Red-billed1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: right;
+    width: 10%;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: right;
+    width: 10%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+ul {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 8px;
+    width: 60px;
+    background-color: chocolate;
+    text-decoration: none;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    font-weight: 20px;
+  }
+
+  li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.item3 {
+    grid-column-start: 3;
+}
+
+.item4 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-direction: row;
+    row-gap: 20px;
+    padding: 10px;
+}
+
+.flex-container img {
+    margin: 10px; /* Add margin between images */
+    
+  }
+.item5 {
+    display: block;
+    border: none;
+    background-image: url(/Images/Red-billed1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 20px;
+    text-align: center;
+    padding: 15px;
+}
+h1 {
+    font-weight: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-stretch: expanded;
+}
+
+h2 {
+    font-weight: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-stretch: expanded;
+}
+
+
+h3 {
+    font-weight: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-stretch: expanded;
+}
+
+p {
+    font-weight: 30px;
+    text-align: center;
+}
+
+iframe {
+    border:"0";
+}
+@media only screen and (min-width: 200px) {
+    body {
+      background-color: lightblue;
+      background-image: radial-gradient(whitesmoke,lightblue);
+    }
+  }
+
+@media only screen and (max-width: 786px) {
+    body {
+      background-color: crimson;
+      background-image: radial-gradient(rgb(105, 15, 168),crimson);
+    }
+}
